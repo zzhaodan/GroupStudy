@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体标签和超链接</title>
+    <style>
+        .content {
+            width: 80vw;
+            margin: 0 auto;
+            height: 15vh;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 特殊字符（转义字符) -->
+  <!--  
+    &nbsp;：空格（non-breaking spacing，不断打空格）
+    &lt;：小于号（less than）
+    &gt;：大于号（greater than）
+    &amp;：符号&
+    &quot;：双引号
+    &apos;：单引号
+    &copy;：版权©
+    &trade;：商标™
+    &#32464;：文字绐。其实，#32464是汉字绐的unicode编码。 
+    -->
+    这是一个HTML语言的&lt;p&gt;标签
+
+    <hr/>
+
+    <!-- 下划线、中划线、斜体 -->
+   <!--  
+    <u>：下划线标记
+    <s>或<del>：中划线标记（删除线）
+    <i>或<em>：斜体标记  <i>常用于网页上小图标、小装饰
+     -->
+    <font>前端学习</font>
+    <br>
+    <u>HTML</u>
+    <s>CSS</s>
+    <br>
+    <i>js</i>
+
+    <hr/>
+
+    <!-- 粗体标签<b>或<strong></strong> -->
+    <b>6666</b>
+    <br>
+
+    <!-- 字体标签<font></font> -->
+    <font face="微软雅黑"color="#FF0000"size="10">vae</font>
+    <br>
+    <!-- 上标<sup>下标<sub></sub> -->
+        O<sup>2</sup>    5<sub>3</sub> 
+
+    <hr/>
+        
+    <!-- 超链接 -->
+    <!-- 1.外部 -->
+        <a href="02⻚面.html">点击进入另外一个文件</a>
+        <br>
+        <a href="http://www.baidu.com"target="_blank">百度一下</a>
+     <!-- 2.锚链接 -->
+
+     <hr/>
+
+     <a name="top">
+         <h2>顶部</h2>
+     </a>
+     <div class="content"></div>
+     <a href="#top">回到顶部</a>
+     <hr/>
+
+     <br>
+
+     <!-- 3.邮件链接 -->
+     <a href="mailto:xxx@163.com">点击进入我的邮箱</a>
+     <br>
+     <!-- 4.超链接的属性 -->
+     <!--     
+         href：目标URL
+     title：悬停文本。
+     name：主要用于设置一个锚点的名称。
+     target：告诉浏览器用什么方式来打开目标⻚面。
+     target属性有以下几个值：
+     _self：在同一个网⻚中显示（默认值）
+     _blank：在新的窗口中打开。
+     _parent：在父窗口中显示
+     _top：在顶级窗口中显示 
+    -->
+    <a href="img.html"title="很好看">集体照</a>
+    <br>
+    <a href="1.html"title="悬停文本"target="_blank">链接的内容</a>
+    <br>
+    <hr/>
+
+    <!-- 注意点 -->
+    <img src="1.jpg"/>
+    <a href="1.html"></a>
+    <br>
+    <p>
+        <a href="">段落段落段落段落段落段落</a>
+    </p>
+
+
+
+
+</body>
+</html>

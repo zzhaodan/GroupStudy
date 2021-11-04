@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+    <!-- localStorage 的 API 举例： -->
+    </head>
+    <body>
+        <input type="text"/>
+        <button>localStorage存储</button>
+        <button>localStorage获取</button>
+        <button>localStorage更新</button>
+        <button>localStorage删除</button>
+        <button>localStorage清除</button>
+        <script>
+        let txt=document.querySelector('input');
+        let btns=document.querySelectorAll('button');
+         btns[0].onclick=function () {
+             window.localStorage.setItem('userName', txt.value);    
+            }
+            // localStorage存储数据
+            btns[1].onclick=function () {
+                txt.value=window.localStorage.getItem('userName');  
+              }
+              // localStorage删除数据
+       btns[3].onclick=function () {
+           window.localStorage.removeItem('userName');  
+          }
+          </script>
+        </body>
+        </html>
+    

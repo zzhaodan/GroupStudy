@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器存储</title>
+    </head>
+    <body>
+        <input type="text"/>
+        <button>sesssionStorage存储</button>
+        <button>sesssionStorage获取</button>
+        <button>sesssionStorage更新</button>
+        <button>sesssionStorage删除</button>
+        <button>sesssionStorage清除</button>
+        <script>
+        let txt=document.querySelector('input');
+        let btns=document.querySelectorAll('button');
+        btns[0].onclick=function () {
+            window.sessionStorage.setItem('userName', txt.value);
+            window.sessionStorage.setItem('pwd', '123456');
+       window.sessionStorage.setItem('age', 18);
+        }
+        btns[1].onclick=function () {
+        txt.value=window.sessionStorage.getItem('userName'); 
+        }
+        btns[2].onclick=function () {
+           window.sessionStorage.setItem('userName', txt.value); 
+        }
+        btns[3].onclick=function () {
+            window.sessionStorage.removeItem('userName');  
+          }
+         btns[4].onclick=function () {
+             window.sessionStorage.clear();   
+             }
+             </script>
+             </body>
+             </html>
